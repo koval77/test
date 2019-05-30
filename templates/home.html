@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stores Test</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/template.css')}}">
+    <script type="text/javascript" src="{{url_for('static',filename='js/test.js')}}"></script>
+</head>
+<body>
+<h1>Stores</h1>
+<p>List of stores</p>
+
+<table border=1>
+    <tr>
+        <th>Place</th>
+        <th>Postcode</th>
+    </tr>
+    {% for el in result%}
+    <tr>
+        <td>{{el['name']}}</td>
+        <td>{{el['postcode']}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

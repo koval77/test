@@ -1,0 +1,21 @@
+h1{
+color:green;
+}
+table{
+display:block;
+  border-collapse: collapse;
+  width:60%;
+  height:400px;
+  overflow-y:scroll;
+  padding:15px;
+  margin-left:40px;
+}
+th{
+  height:50px;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
