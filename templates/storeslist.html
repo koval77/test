@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stores list</title>
+</head>
+<body>
+<table border=1>
+    {% for key, value in storeslist.items() %}
+    <tr>
+        <th>{{key}}</th>
+        <td>{{value}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

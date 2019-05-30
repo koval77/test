@@ -1,14 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding:10px;
+  margin:5px;
+  background:linear-gradient(#152245,#154733,#241130);
+}
 h1{
 color:green;
 }
 table{
 display:block;
   border-collapse: collapse;
-  width:60%;
+  width:100%;
   height:400px;
   overflow-y:scroll;
   padding:15px;
   margin-left:40px;
+  background:white;
 }
 th{
   height:50px;
@@ -19,3 +29,31 @@ td, th {
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 tr:hover {background-color: #ddd;}
+.grid-container {
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  margin:5px 100px 100px 100px;
+}
+form{
+  color:white;
+  padding:50px;
+  font-size:50px;
+}
+input{
+  font-size:24px;
+  box-shadow:1px 1px 6px white;
+  padding:1px;
+  margin:15px;
+}
+label{
+  color:wheat;
+  font-size:26px;
+  text-shadow:2px 2px 4px blue,2px 2px 10px wheat;
+}
+button{
+  margin:50px;
+  box-shadow:1px 1px 6px white;
+  height:40px;
+}

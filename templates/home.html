@@ -9,18 +9,33 @@
 <body>
 <h1>Stores</h1>
 <p>List of stores</p>
+<div class="grid-container">
+  <div class="item1">
 
 <table border=1>
     <tr>
         <th>Place</th>
         <th>Postcode</th>
+        <th>Lat</th>
+        <th>Lon</th>
     </tr>
     {% for el in result%}
     <tr>
         <td>{{el['name']}}</td>
         <td>{{el['postcode']}}</td>
+        <td>{{el['lat']}}</td>
+        <td>{{el['lon']}}</td>
+
     </tr>
     {%endfor%}
-</table>
+</table></div>
+    <div class="item2">
+<form id="form" action="http://localhost:5000/storeslist" method="POST"><label for="postcode">Postcode:
+      <input id="postcode" type="text" placeholder="postcode" name="postcode"></label><br><label for="distance" name="distance">Distance:
+      <input id="distance" type="text" placeholder="distance" name="distance" required></label><br>
+      <input id="submit" type="submit" value="Check">
+    </form>
+    </div>
+</div>
 </body>
 </html>
