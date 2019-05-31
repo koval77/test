@@ -3,5 +3,14 @@
 # data = api.get_postcode('SW112EF')
 # print(data)
 ps = "as34 4ed"
-psr = ps.replace(" ", "")
-print(psr)
+
+prtowns=[]
+fulllist=["sdf","£ef","edfer","efr"]
+def prfnck():
+    for h in fulllist:
+        prtowns.append(h)
+
+a=prfnck()
+print(prtowns)
+print(len(prtowns))
+print(a)
