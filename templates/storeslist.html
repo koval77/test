@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stores list</title>
+    <title>Nearby Stores list sorted from north to south</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/template.css')}}">
 </head>
 <body>
+<h1>Nearby Stores</h1>
 <table border=1>
-    {% for value in nearest_stores %}
     <tr>
-        <th>d</th>
-        <td>{{value}}</td>
+        <th>Place</th>
+        <th>Postcode</th>
+        <th>Latitude</th>
+    </tr>
+    {% for value in nearest_stores %}
+
+    <tr>
+        <td>{{value['name']}}</td>
+        <td>{{value['postcode']}}</td>
+        <td>{{value['latitude']}}</td>
     </tr>
     {%endfor%}
+    <div class="counting">
+        <h2>Number of stores within given distance:</h2>
+        <p>{{how_many}}</p>
+    </div>
 </table>
 </body>
 </html>
