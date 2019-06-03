@@ -7,9 +7,7 @@ body{
   margin:5px;
   background:linear-gradient(#152245,#154733,#241130);
 }
-h1{
-color:green;
-}
+
 table{
 display:block;
   border-collapse: collapse;
@@ -70,3 +68,12 @@ right:15px;}
 .counting{
 float:right;
 color:white;}
+
+h1{
+color:green;
+font-size: 40px;
+letter-spacing: 3px;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+p{
+font-size:22px;}
