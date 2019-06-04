@@ -1,8 +1,8 @@
-#Test website
+# Test website
 
-##Website made withPython and Flask
+## Website made withPython and Flask
 
-###How to use it:
+### How to use it:
 
 1. Make sure that you have python installed
 2. Make sure path to python is specified in your environmental variables [environment variables tutorial](https://geek-university.com/python/add-python-to-the-windows-path/)
