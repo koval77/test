@@ -10,3 +10,12 @@
 `pip install -r requirements.txt` from inside the folder "test".
 4. From folder "test" run command: 
 `python main.py`
+5. Server will run on local host. Open the browser and put http://127.0.0.1:5000/ into address bar (assuming default settings)
+6. Website will be opened. Into the form fields insert user postcode and desired distance.
+
+# Troubleshooting
+
+If there will be problem with installation dependencies from requirements.txt try following commands installing the most basic libraries:
+`pip install --user postcodes-io-api`
+`pip install --user flask`
+`pip install --user haversine`
