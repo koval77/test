@@ -6,6 +6,7 @@ body{
   padding:10px;
   margin:5px;
   background:linear-gradient(#152245,#154733,#241130);
+  height:100vh;
 }
 
 table{
@@ -15,7 +16,7 @@ display:block;
   height:400px;
   overflow-y:scroll;
   padding:15px;
-  margin-left:40px;
+  margin-left:4px;
   background:white;
 }
 th{
@@ -32,11 +33,14 @@ tr:hover {background-color: #ddd;}
   display:flex;
   flex-direction:row;
   justify-content:space-around;
-  align-items:flex-start;
+  align-items:center;
+  flex-wrap:wrap;
   margin:5px 10px 10px 10px;
 }
-item1,item2{
-margin:0 10px;}
+.item1,.item2{
+margin:0 2px;
+width: 500px;
+}
 form{
   color:white;
   padding:50px;

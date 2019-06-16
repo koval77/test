@@ -8,6 +8,8 @@
 </head>
 <body>
 <h1>Nearby Stores</h1>
+<div class="flex-container">
+    <div class="item1">
 <table border=1>
     <tr>
         <th>Place</th>
@@ -23,9 +25,11 @@
     </tr>
     {%endfor%}
 </table>
+    </div>
 <div class="counting">
     <h2>Number of stores within given distance:</h2>
     <p>{{how_many}}</p>
+</div>
 </div>
 </body>
 </html>
