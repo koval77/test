@@ -7,7 +7,7 @@ Click==7.0
 colorama==0.4.1
 Flask==1.0.3
 Flask-Testing==0.7.1
-gunicorn==19.4.5
+gunicorn==19.5.0
 haversine==2.1.1
 idna==2.8
 importlib-metadata==0.17
