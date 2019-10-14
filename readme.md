@@ -1,6 +1,8 @@
 # Test website
 
-## Website made withPython and Flask
+## Website made withPython and Flask of the online shop. The program takes as an input localisation (with postcode) from the user and a some distance and then it generates an list of the nearby shops. 
+
+It uses the haversine formula which determines the great-circle distance between two points on a sphere given their longitudes and latitudes.
 
 ### How to use it:
 
